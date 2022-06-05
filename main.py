@@ -20,11 +20,11 @@ TOKEN = "1823808722:AAEVT_ASuHBtwXcIjnZZtiOjLfDPZJ8XwHk"
 def download(bot, update):
     #message = update.effective_message
     instagram_post = update.text
-    if instagram_post=="/start":
-        bot.send_chat_action(chat_id=update.chat_id, action="typing")
-        update.reply_text("❤️ Thanks For Using Me Just Send Me The Link In Below Format  \n🔥 Format :- https://www.instagram.com/p/B4zvXCIlNTw/ \nVideos Must Be Less Then 20MB, For Now It Cannot Support Long IGTV Videos \n\n<b>Support Group :-</b> @Technology_Arena \n<b>🌀 Source</b> \nhttps://github.com/TheDarkW3b/instagram", parse_mode=ParseMode.HTML, disable_web_page_preview=True)
-    else:
-        pass
+    #if instagram_post=="/start":
+        #bot.send_chat_action(chat_id=update.chat_id, action="typing")
+        #update.reply_text("❤️ Thanks For Using Me Just Send Me The Link In Below Format  \n🔥 Format :- https://www.instagram.com/p/B4zvXCIlNTw/ \nVideos Must Be Less Then 20MB, For Now It Cannot Support Long IGTV Videos \n\n<b>Support Group :-</b> @Technology_Arena \n<b>🌀 Source</b> \nhttps://github.com/TheDarkW3b/instagram", parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+    #else:
+        #pass
     if "instagram.com" in instagram_post:
         changing_url = instagram_post.split("/")
         url_code = changing_url[4]
