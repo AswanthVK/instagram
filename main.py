@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 TOKEN = "5463958420:AAHLzffDhghdH8qXALrL2kKNCIbKs_KUYvI"
 
 def download(bot, update):
-    #message = update.effective_message
-    instagram_post = update.text
+    message = update.effective_message
+    instagram_post = message.text
     if instagram_post=="/start":
         bot.send_chat_action(chat_id=update.chat_id, action="typing")
         update.reply_text("❤️ Thanks For Using Me Just Send Me The Link \nVideos Must Be Less Then 20MB, For Now It Cannot Support Long IGTV Videos", parse_mode=ParseMode.HTML, disable_web_page_preview=True)
